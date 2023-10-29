@@ -79,6 +79,11 @@ function App() {
   }
   return (
     <>
+    <nav>
+     <h1>Your Second Chance is here</h1> 
+    </nav>
+    <div>
+    </div>
       <button type="button" onClick={getEtudiants}>
         Liste etudiants
       </button>
@@ -97,6 +102,7 @@ function App() {
           ))}
         </ul>
       </div>
+      <hr/>
       <input
         name="idk"
         onChange={(e) => setNomEtudiant(e.target.value)}
@@ -108,6 +114,7 @@ function App() {
         <DisplaySearchResult etudiantResult={etudiantResult} />
       )}
       <br />
+      <hr/>
       <button onClick={getCourses}>Get courses </button>
       <br />
       <table width="100%">
@@ -129,6 +136,7 @@ function App() {
         ))}
       </table>
       <br />
+      <hr/>
       <button onClick={getCentreFormation}>
         Liste des centres de formation
       </button>
@@ -147,6 +155,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <hr/>
       <button onClick={getPosts}>All posts</button>
       <ul>
         {posts.map((post) => (
@@ -157,6 +166,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <hr/>
       <button onClick={getAdmincentre}>Admin par centre:</button>
       {adminCentres.map((adminCentre) => (
         <p key={adminCentre}>
@@ -168,6 +178,7 @@ function App() {
       ))}
       <br />
       <br />
+      <hr/>
       <button onClick={getformationEtudiant}>
         Etudiants et leur formations:
       </button>
@@ -179,6 +190,7 @@ function App() {
       ))}
       <br />
       <br />
+      <hr/>
       <button onClick={getCoursPosts}>Cours et leurs posts</button>
       {coursposts.map((courspost) => (
         <p key={courspost["COURS_NAME"].value}>
@@ -188,6 +200,7 @@ function App() {
       ))}
       <br />
       <br />
+      <hr/>
       <button onClick={getCentreConference}>
         Conferences et leur centres de formations organisateurs
       </button>
@@ -200,6 +213,7 @@ function App() {
       ))}
       <br />
       <br />
+      <hr/>
       <button onClick={EtudiantParseminaire}>
         Etudiant et events auquels ils participent
       </button>
