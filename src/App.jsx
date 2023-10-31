@@ -103,7 +103,7 @@ function App() {
       </div>
       <hr />
       <input
-        name="idk"
+        name="input name"
         onChange={(e) => setNomEtudiant(e.target.value)}
         value={nomEtudiant}
       />
